@@ -36,9 +36,12 @@ header li a{
     display: flex;
     justify-content: center;
     align-items: end;
+    background-image: url(https://images.pexels.com/photos/18696919/pexels-photo-18696919/free-photo-of-river-and-waterfall-in-iceland.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .box{
-    background-color: rgb(186, 186, 186);
+    backdrop-filter: blur(10px);
     height: 60%;
     width: 80%;
     display: flex;
@@ -46,6 +49,8 @@ header li a{
     flex-direction: column;
 }
 .box-1{
+    position: absolute;
+    top: 10%;
     height: 20%;
     width: 100%;
     display: flex;
@@ -71,15 +76,32 @@ header li a{
 .box-1 li a{
     text-decoration: none;
     color: aliceblue;
+    font-weight: 800;
+
+}
+.box-1 li button{
+    height: 5vh;
+    width: 12vh;
+    color: white;
+    border-radius: 5px;
+   
+}
+.fa-plane{
+    rotate: -50deg;
 }
 .box-2{
+    position: absolute;
+    top: 30%;
+
     height: 80%;
-    background-color: rgb(233, 233, 233);
+    
+    background-color: rgb(255, 255, 255);
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    box-shadow: 0px 0px 1px rgb(0, 0, 0) ;
 }
 .box2-a{
     width: 95%;
@@ -104,8 +126,19 @@ form input, select{
     border-radius: 5px;
     padding: 15px;
 }
-
+#search-btn{
+    position: absolute;
+    left: 45%;
+    top: 57%;
+    padding:2vh 9vh;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+  
+}
 #hotels{
+    position: absolute;
+    top: 70%;
     height: 100vh;
     width: 100%;
     display: flex;
